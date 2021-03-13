@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import yellowsun from './assets/yellowsun.svg';
+import yellowsun from './../assets/yellowsun.svg';
 
-class Wakeup extends Component {
+class Finale extends Component {
   render() {
     return (
       <div className="App">
@@ -10,11 +10,8 @@ class Wakeup extends Component {
           <img src={yellowsun} className="App-logo" alt="logo" />
       <br />
       <div className="Container"> 
-        What's poppin! 
-        <br />
-        <a href="#breakfast"><button>Breakfast</button></a>
-        <br />
-        <a href="#lunch"><button>Skip Breakfast</button></a>
+        Welcome to Finale! It is {this.state.urlParams.time + this.state.urlParams.meridian}
+      
       </div>
         </header>
       </div>
@@ -22,4 +19,4 @@ class Wakeup extends Component {
   }
 }
 
-export default Wakeup;
+export default Finale;
