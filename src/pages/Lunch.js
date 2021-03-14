@@ -3,8 +3,7 @@ import yellowsun from './../assets/yellowsun.svg';
 import queryString from 'query-string';
 
 class Lunch extends Component {
-  constructor(props)
-  {
+  constructor(props) {
     super();
     this.state = {
       urlParams: queryString.parse(props.location.search),
@@ -18,7 +17,7 @@ class Lunch extends Component {
           <img src={yellowsun} className="App-logo" alt="logo" />
       <br />
       <div className="Container"> 
-        Welcome to lunch! It is {this.state.urlParams.time + this.state.urlParams.meridian}
+        Welcome to lunch!
         <br />
         <br />
         <a href={"#dinner" + this.props.location.search + "&lunch=alfredo"}><button>Eat Jerk Chicken and Shrimp Alfredo</button></a>

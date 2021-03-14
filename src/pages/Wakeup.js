@@ -3,13 +3,13 @@ import yellowsun from './../assets/yellowsun.svg';
 import queryString from 'query-string';
 
 class Wakeup extends Component {
-  constructor(props)
-  {
+  constructor(props) {
     super();
-    this.state = {
-      urlParams: queryString.parse(props.location.search),
-    }
+
+    this.urlParams = queryString.parse(props.location.search);
+    console.log(this.urlParams);
   }
+
   render() {
     return (
       <div className="App">
@@ -18,7 +18,7 @@ class Wakeup extends Component {
           <img src={yellowsun} className="App-logo" alt="logo" />
       <br />
       <div className="Container"> 
-        What's poppin! It is {this.state.urlParams.time + this.state.urlParams.meridian}
+        What's poppin!
         <br />
         <a href={"#breakfast" + this.props.location.search}><button>Start with Breakfast</button></a>
         <br />

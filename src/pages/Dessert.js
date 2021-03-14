@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import yellowsun from './../assets/yellowsun.svg';
+import queryString from 'query-string';
 
 class Dessert extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      urlParams: queryString.parse(props.location.search),
+    }
+  }
+
   render() {
     return (
       <div className="App">
