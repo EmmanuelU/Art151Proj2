@@ -11,7 +11,7 @@ class Breakfast extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App App-breakfast">
         <header className="App-header">
 
           <img src={yellowsun} className="App-logo" alt="logo" />
@@ -33,6 +33,19 @@ class Breakfast extends Component {
             <a href={"#lunch" + this.props.location.search + "&breakfast=none"}><button>Skip Breakfast</button></a>
           </div>
         </header>
+            <h3>
+            <br/>Breakfast is the first meal of the 
+            <br/>day eaten after waking up, usually in the morning.
+            <br/>The word in English refers to breaking the fasting
+            <br/>period of the previous night. 
+            <br/>There is a strong likelihood for one or more
+            <br/>"typical", or "traditional", breakfast menus to
+            <br/>exist in most places, but their composition varies
+            <br/>widely from place to place, and has varied over time,
+            <br/>so that globally a very wide range of preparations
+            <br/>and ingredients are now associated with breakfast.
+            </h3>
+            <br />
       </div>
     );
   }

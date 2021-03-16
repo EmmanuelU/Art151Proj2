@@ -12,7 +12,7 @@ class Wakeup extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App App-wakeup">
         <header className="App-header">
 
           <img src={yellowsun} className="App-logo" alt="logo" />

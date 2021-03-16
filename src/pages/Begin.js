@@ -5,10 +5,10 @@ class Begin extends Component {
   constructor(props) {
     super(props);
     this.snoozeHandler = this.snoozeHandler.bind(this);
-    this.state = { time: 6}
+    this.state = { time: 6, day: 0}
   }
 
-  getTime(time, meridian)
+  getTime(time)
   {
     return time === 0 ? "12AM" : (time > 11 ? (time > 12 ? (time % 12) : time) + "PM" : (time) + "AM")
   }
@@ -24,6 +24,7 @@ class Begin extends Component {
     {
       this.setState({
         time: 0,
+        day: this.state.day + 1,
       });
     }
     else
@@ -36,7 +37,7 @@ class Begin extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App App-begin">
         <header className="App-header">
 
           <img src={Sun} className="App-logo" alt="logo" />
@@ -46,7 +47,7 @@ class Begin extends Component {
             <br />
             <button onClick={() => this.snoozeHandler()}> Click Me to Snooze</button>
             <br />
-            <a href={"#wakeup?time=" + this.state.time}><button> Click Me to Wake Up</button></a>
+            <a href={"#wakeup?time=" + this.state.time + "&day=" + this.state.day}><button> Click Me to Wake Up</button></a>
           </div>
         </header>
       </div>
