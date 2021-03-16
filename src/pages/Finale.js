@@ -50,11 +50,11 @@ class Finale extends Component {
   {
     var percent = 100;
     if(this.getBreakfast() === "none")
-      percent -= 20;
+      percent -= 30;
     if(this.getLunch() === "none")
-      percent -= 10;
+      percent -= 20;
     if(this.getDinner() === "none")
-      percent -= 5;
+      percent -= 15;
     if(this.getDessert() === "none")
       percent += 12;
 
