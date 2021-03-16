@@ -31,7 +31,7 @@ class Dessert extends Component {
         <a href={"#finale" + this.props.location.search + "&dessert=applepie"}><button>Eat Apple Pie</button></a>
         <br />
         <br />
-        <a href={"#finale" + + this.props.location.search + "&dessert=none"}><button>Skip Dessert</button></a>
+        <a href={"#finale" + this.props.location.search + "&dessert=none"}><button>Skip Dessert</button></a>
       </div>
         </header>
         <h3>
